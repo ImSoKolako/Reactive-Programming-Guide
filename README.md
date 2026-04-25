@@ -184,5 +184,5 @@ function module.PopEvent<T>() : Event<T>?
 	return nil
 end
 
-return module
+return table.freeze(module)
 ```
