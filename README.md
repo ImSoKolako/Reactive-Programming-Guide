@@ -87,7 +87,6 @@ end
 Однако при такой записи будет нарушаться порядок: если происходит отключение - теряется вызов одного из подключений.
 В целях обучения представлю максимально простой вариант исправления:
 ```lua
-local connections = table.clone(self) :: {Connection<T...>}
 	local connections = table.clone(self) :: {Connection<T...>}
   
 	for i,conn in next,connections do
